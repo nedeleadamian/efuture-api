@@ -1,13 +1,14 @@
 import { faker } from '@faker-js/faker';
 import { MigrationInterface, QueryRunner } from 'typeorm';
 
-export class SeedCoreData1705345678901 implements MigrationInterface {
+export class SeedCoreData1769464746976 implements MigrationInterface {
+  name = 'SetUpMigration1769464746976';
+
   public async up(queryRunner: QueryRunner): Promise<void> {
     console.log('🌱 Starting Core Data Seed...');
 
     const passwordHash = '$2b$10$8H/RfzlZesyhP5o02CYsCuVXHVpoxg2/Zzv02mrpIilSqLAcUxj12';
     const userIds: string[] = [];
-
 
     const email = `admin@admin.com`;
 

@@ -3,7 +3,7 @@ version: '3.8'
 services:
   # --- Database Service ---
   postgres:
-    image: postgres:18-alpine
+    image: postgres:17-alpine
     container_name: efuture_db
     restart: always
     ports:
